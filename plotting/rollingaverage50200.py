@@ -1,5 +1,13 @@
 #!/usr/bin/python
 
+# This script can be run with `python rollingaverage50200.py ticker`. One must
+# have a plot.ly account w/ a .credentials file saved in ~/.plotly. Running the
+# script takes one to a browser page with an interactive plotly graph of the
+# rolling mean (both last 50 and 200 days) superimposed on the normal
+# candlestick graph of the stock with ticker `ticker`.
+
+# TODO: Add a date range to be read for the arguments
+
 import sys
 from datetime import datetime, timedelta
 
